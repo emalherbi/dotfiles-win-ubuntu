@@ -13,12 +13,13 @@ install_checked "rar" "which rar" "sudo apt install rar unrar"
 # SVN
 install_checked "svn" "which svn" "sudo apt install subversion"
 
-# Network Manager
-install_checked "network-manager" "which network-manager" "sudo apt install network-manager"
-
 # NVM
-sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash 
-source ~/.profile
-nvm install 18.19.1
+if [ -d "/home/$user/.nvm" ]; then
+    print_checked "nvm"
+else
+    sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash 
+    source ~/.profile
+    nvm install 18.19.1
+fi
 
 print "Finished: Linux Others"

@@ -48,11 +48,6 @@ alias svnup='sudo svn update .'
 alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" | cut -d" " -f7- | xargs -d"\n" chmod +x'
 alias gitchm='git diff --summary | grep --color "mode change 100644 => 100755" | cut -d" " -f7- | xargs -d"\n" chmod -x'
 
-# net
-alias netlist='nmcli c'
-alias netdown='nmcli c down'
-alias netup='nmcli c up'
-
 kill_process_by_port()
 {
   sudo kill -9 `sudo lsof -t -i:$1`

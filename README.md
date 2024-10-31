@@ -49,10 +49,10 @@ export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64'
 
 ```
 => linux ✔
+|  => curl ✔
 |  => rar ✔
-|  => node ✔
 |  => svn ✔
-|  => network-manager ✔
+|  => nvm ✔
 => node ✔
 |  => grunt ✔
 |  => grunt-init ✔
