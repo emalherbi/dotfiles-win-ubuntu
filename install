@@ -1,0 +1,21 @@
+#!/bin/bash
+
+source common/clear.sh
+
+source common/functions.sh
+
+# Create your here: http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+print ' _______    ______   ________  ________  ______  __        ________   ______  '
+print '/       \  /      \ /        |/        |/      |/  |      /        | /      \ '
+print '$$$$$$$  |/$$$$$$  |$$$$$$$$/ $$$$$$$$/ $$$$$$/ $$ |      $$$$$$$$/ /$$$$$$  |'
+print '$$ |  $$ |$$ |  $$ |   $$ |   $$ |__      $$ |  $$ |      $$ |__    $$ \__$$/ '
+print '$$ |  $$ |$$ |  $$ |   $$ |   $$    |     $$ |  $$ |      $$    |   $$      \ '
+print '$$ |  $$ |$$ |  $$ |   $$ |   $$$$$/      $$ |  $$ |      $$$$$/     $$$$$$  |'
+print '$$ |__$$ |$$ \__$$ |   $$ |   $$ |       _$$ |_ $$ |_____ $$ |_____ /  \__$$ |'
+print '$$    $$/ $$    $$/    $$ |   $$ |      / $$   |$$       |$$       |$$    $$/ '
+print '$$$$$$$/   $$$$$$/     $$/    $$/       $$$$$$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/  '
+
+bash linux/system.sh
+bash linux/apps.sh
+bash node/global.sh
+bash common/dotfiles.sh
