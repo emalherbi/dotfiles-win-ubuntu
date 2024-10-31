@@ -4,16 +4,21 @@ source common/functions.sh
 
 print "Starting: Linux Others"
 
-# Rar
-install_checked "rar" "which rar" "sudo apt-get install rar unrar"
+# Curl
+install_checked "curl" "which curl" "sudo apt install curl"
 
-# Node
-install_checked "node" "which node" "sudo apt-get install node"
+# Rar
+install_checked "rar" "which rar" "sudo apt install rar unrar"
 
 # SVN
-install_checked "svn" "which svn" "sudo apt-get install subversion"
+install_checked "svn" "which svn" "sudo apt install subversion"
 
 # Network Manager
-install_checked "network-manager" "which network-manager" "sudo apt-get install network-manager"
+install_checked "network-manager" "which network-manager" "sudo apt install network-manager"
+
+# NVM
+sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash 
+source ~/.profile
+nvm install 18.19.1
 
 print "Finished: Linux Others"
