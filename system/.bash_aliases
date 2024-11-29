@@ -21,22 +21,22 @@ alias www='cd $HOME/www'
 
 # docker
 alias dcwww='cd $HOME/Sites/dockers'
-alias dcimg='sudo docker images'
-alias dcps='sudo docker ps'
-alias dcpsaq='sudo docker ps -a -q'
-alias dcrm='sudo docker rm'
-alias dcrmall='sudo docker rm $(sudo docker ps -a -q)'
-alias dcrmi='sudo docker rmi'
-alias dcrmiall='sudo docker rmi $(sudo docker images -q)'
-alias dcstop='sudo docker stop'
-alias dcstopall='sudo docker stop $(sudo docker ps -a -q)'
-alias dcstart='sudo docker start'
-alias dcstartall='sudo docker start $(sudo docker ps -a -q)'
-alias dcup='sudo docker-compose up'
-alias dcupd='sudo docker-compose up -d'
-alias dcupdf='sudo docker-compose up -d --force-recreate'
-alias dcupdbf='sudo docker-compose up -d --build --force-recreate'
-alias dcupall='sudo docker-compose up -d db && sleep 5 && sudo docker-compose up -d phpmyadmin && sleep 5 && sudo docker-compose up -d php'
+alias dcimg='docker images'
+alias dcps='docker ps'
+alias dcpsaq='docker ps -a -q'
+alias dcrm='docker rm'
+alias dcrmall='docker rm $(docker ps -a -q)'
+alias dcrmi='docker rmi'
+alias dcrmiall='docker rmi $(docker images -q)'
+alias dcstop='docker stop'
+alias dcstopall='docker stop $(docker ps -a -q)'
+alias dcstart='docker start'
+alias dcstartall='docker start $(docker ps -a -q)'
+alias dcup='docker-compose up'
+alias dcupd='docker-compose up -d'
+alias dcupdf='docker-compose up -d --force-recreate'
+alias dcupdbf='docker-compose up -d --build --force-recreate'
+alias dcupall='docker-compose up -d db && sleep 5 && docker-compose up -d phpmyadmin && sleep 5 && docker-compose up -d php'
 
 # svn
 alias svnad='sudo svn add * --force'
@@ -52,9 +52,3 @@ kill_process_by_port()
 {
   sudo kill -9 `sudo lsof -t -i:$1`
 }
-
-# export ANDROID_HOME=${HOME}/Android/Sdk
-# export ANDROID_SDK_ROOT=${HOME}/Android/Sdk
-# export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-# export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64'
-# export SVN_EDITOR=vi

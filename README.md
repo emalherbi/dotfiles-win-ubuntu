@@ -1,6 +1,6 @@
 # dotfiles-win-wsl
 
-My dotfiles with WSL  
+My dotfiles with WSL
 
 ## Instalation
 
@@ -15,16 +15,6 @@ $ git clone git@github.com:emalherbi/dotfiles-win-wsl.git && cd dotfiles-win-wsl
 ```bash
 $ chmod +x install
 $ bash install
-```
-
-#### Android HOME & Java HOME
-
-Configure "JAVA_HOME" if necessary.
-
-1. Edit file "system/.bash_aliases".
-
-```bash
-export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64'
 ```
 
 ## Aliases
